@@ -1,0 +1,132 @@
+.full-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+.imgsize{
+    width: 100%;
+    height: 100vh;
+}
+.w-100 {
+  width: 100%!important;
+  height: 100vh;
+}
+.navbar{
+	background-color: rgba(153, 80, 41, 0.7)!important;
+
+}
+
+.col1{
+  margin-top: 10%;
+
+}
+.col2{
+  margin-top: 6%;
+}
+.text1{
+  margin-top: -5%;
+}
+.text2{
+  margin-top: -5%;
+}
+
+.carousel-caption{
+  position: absolute;
+    left: 8%;
+    top: 35%;
+    width: 30%;
+    margin-left: 2%;
+    text-align: left;
+}
+.carousel-control-next, .carousel-control-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 5%;
+  color: #000000;
+  text-align: center;
+  opacity: .5;
+  transition: opacity .15s ease;
+}
+.content2{
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.footer{
+  width: 100%;
+  height: 50vh;
+  background-color: #424141;
+}
+.footer .container .row .alamat .alamat-item{
+  margin-left: 25%;
+  margin-top: 7%;
+}
+
+@media (min-width: 576px) { 
+  .judul2{
+    margin-left: 0% !important;
+  }
+  .produkA{
+    padding: 0px 5px 0px 5px;
+    width: 61%;
+  }
+  .produkB{
+    padding: 0px 5px 0px 5px;
+    width: 61%;
+  }
+}
+
+
+@media (min-width: 768px) { 
+  .judul2{
+    margin-left: 52% !important;
+  }
+  .produkA{
+    padding: 0px 5px 0px 5px;
+    width: 65%;
+  }
+  .produkB{
+    padding: 0px 5px 0px 5px;
+    width: 65%;
+  }
+}
+
+
+@media (min-width: 992px) { 
+  .judul2{
+    margin-left: 51% !important;
+  }
+  .produkA{
+    padding: 0px 5px 0px 5px;
+    width: 50%;
+  }
+  .produkB{
+    padding: 0px 5px 0px 5px;
+    width: 50%;
+  }
+}
+
+
+@media (min-width: 1200px) { 
+  .judul2{
+    margin-left: 51% !important;
+  }
+  .produkA{
+    padding: 0px 5px 0px 5px;
+    width: 45%;
+  }
+  .produkB{
+    padding: 0px 5px 0px 5px;
+    width: 45%;
+  }
+}

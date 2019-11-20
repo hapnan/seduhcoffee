@@ -1,0 +1,102 @@
+.imagebg{
+    background-image: url(../external/image/Artboard.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position-x: 49%;
+    background-position-y: 120px;
+    
+}
+
+.navbar{
+    background-color: rgba(153, 80, 41, 0.7)!important;
+
+}
+
+.form{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+label{
+    display: inline-block; 
+    margin-bottom: 0 !important;
+}
+
+.form .form-group input{
+    width: 100%;
+    height: 100%;
+    color: black;
+    padding-top: 20px;
+    margin-top: 2px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.form .form-group label{
+    position: relative;
+    bottom: 15px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    color: black;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+
+.form .form-group label::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -3px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid rgb(88, 243, 248);
+    transform: translate(-100%);
+    transition: transform 0.3s ease;
+}
+
+.content-password{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+
+.content-email{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+
+.form .form-group input:focus + .label-password .content-password, .form .form-group input:valid + .label-password .content-password{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: rgb(88, 243, 248);
+}
+
+.form .form-group input:focus + .label-email .content-email, .form .form-group input:valid + .label-email .content-email{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: rgb(88, 243, 248);
+}
+
+.form .form-group input:focus + .label-password::after, .form .form-group input:valid + .label-password::after{
+    transform: translateX(0%);
+}
+
+.form .form-group input:focus + .label-email::after, .form .form-group input:valid + .label-email::after{
+    transform: translateX(0%);
+}
+
+.box{
+    margin-left: 37%;
+    margin-top: 10%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    background-color:whitesmoke;
+}
+
