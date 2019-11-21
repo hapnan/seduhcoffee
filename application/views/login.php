@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="<?= base_url('external/css/login.css');?>">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body class="imagebg">
     <nav class="navbar navbar-expand-lg  navbar-light scrolling-navbar fixed-top">
@@ -28,6 +30,9 @@
         </ul>
       </div>
       <form class="form-inline my-2 my-lg-0">
+        <i class="material-icons">
+          shopping_cart
+        </i>
         <a href="<?= base_url('register'); ?>"><button class="btn btn-outline-danger mr-1" type="submit" >Register</button></a>
         <a href="<?= base_url('login'); ?>"><button class="btn btn-outline-success my-2 my-sm-0" type="submit" >Login</button></a>
       </form>
