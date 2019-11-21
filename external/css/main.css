@@ -72,6 +72,11 @@
   margin-top: 7%;
 }
 
+.material-icons{
+	font-size: 30px !important;
+	color: blanchedalmond;
+}
+
 @media (min-width: 576px) { 
   .judul2{
     margin-left: 0% !important;

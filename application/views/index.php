@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="<?= base_url('external/js/main.js');?>">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet">
+		
   
     <title>Seduh Coffe</title>
   </head>
@@ -36,6 +38,9 @@
         </ul>
       </div>
       <div class="form-inline my-2 my-lg-0">
+				<a href="http://"> <i class="material-icons pt-2 mr-1">
+          shopping_cart
+				</i></a>
 				<a href="<?= base_url('register') ?>"><button class="btn btn-danger mr-1" type="submit" >Register</button></a>
         <a href="<?= base_url('login') ?>"><button class="btn btn-success my-2 my-sm-0" type="submit" >Login</button></a>
 			</div>
@@ -46,7 +51,7 @@
         <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="<?= base_url('external/image/corosel.jpg');?>" data-color="lightblue" alt="First Image">
+          <img class="d-block w-100 paralax " src="<?= base_url('external/image/corosel.jpg');?>" data-color="lightblue" alt="First Image">
           <div class="carousel-caption">
             <div class="animated fadeInDown ">
               <h3>Seduh Coffe</h3>
@@ -55,7 +60,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="<?= base_url('external/image/corosel.jpg');?>" data-color="lightblue" alt="First Image">
+          <img class="d-block w-100 paralax" src="<?= base_url('external/image/corosel.jpg');?>" data-color="lightblue" alt="First Image">
           <div class="carousel-caption">
               <div class="animated fadeInDown ">
                 <h3>Seduh Coffe</h3>
@@ -64,7 +69,7 @@
           </div>
           </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="<?= base_url('external/image/corosel.jpg');?>" data-color="lightblue" alt="First Image">
+              <img class="d-block w-100 paralax" src="<?= base_url('external/image/corosel.jpg');?>" data-color="lightblue" alt="First Image">
               <div class="carousel-caption">
                 <div class="animated fadeInDown ">
                     <h3>Seduh Coffe</h3>
@@ -120,7 +125,7 @@
     <section class="content2">
       <div class="row">
         <div class="col-md-12">
-            <img src="<?= base_url('external/image/footer.jpg');?>" alt="" class="img-fluid w-100">
+            <img src="<?= base_url('external/image/footer.jpg');?>" alt="" class="img-fluid w-100 paralax">
         </div>
       </div>
     </section>
@@ -154,6 +159,7 @@
     </section>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
     
   </body>    
