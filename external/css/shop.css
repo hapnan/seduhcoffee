@@ -9,7 +9,7 @@
 .poster{
     height: 100vh;
     width: 100%;
-    background-image: url(../external/image/jumbo.jfif);
+	background-image: url(../image/jumbo.jfif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100vh;
@@ -48,7 +48,7 @@
 .bgblur{
     width: 100%;
     height: 80vh;
-    background-image: url(../external/image/subcrep.jpg);
+    background-image: url(../image/subcrep.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100vh;
