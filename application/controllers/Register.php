@@ -21,7 +21,7 @@ class Register extends CI_Controller {
 	public function __constract()
 	{
 		parent::__construct();
-		$this->load->helper('url');
+		
 		
 	}
 	
