@@ -1,0 +1,62 @@
+body{
+	background-color: rgb(233, 233, 233);
+}
+.navbar{
+	background-color: rgba(153, 80, 41, 0.7)!important;
+}
+.btn-number .material-icons{
+	font-size: 15px !important;
+}
+.bgblur{
+    width: 100%;
+    height: 80vh;
+    background-image: url(../image/subcrep.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+    background-position-y: 130px;
+    filter: blur(8px);
+  -webkit-filter: blur(8px);
+  z-index: -1;
+}
+
+.subcription .row {
+ 
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.subcription .row .col-md-12{
+ 
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+
+.subcription .row .col-md-12 .bg-text .col-md-1{
+ 
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.subcription .row .col-md-12 .bg-text .col-md-10{
+ 
+    
+    padding-left: 0px !important;
+}

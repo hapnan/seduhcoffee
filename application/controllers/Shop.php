@@ -29,4 +29,9 @@ class Shop extends CI_Controller {
 	{
 		$this->load->view('shop');
 	}
+	
+	public function info()
+	{
+		$this->load->view('info');
+	}
 }
