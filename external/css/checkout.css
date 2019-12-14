@@ -1,0 +1,30 @@
+.navbar{
+	background-color: rgba(153, 80, 41, 0.7)!important;
+}
+.change{
+	width: 5%;
+	position: absolute;
+    left: 15%;
+    top: 26%;
+}
+
+tr td b{
+	position: absolute;
+    top: 19%;
+    margin-left: 5px;
+}
+
+.table td, .table th {
+	border-top: 0px solid #dee2e6 !important;
+}
+
+.edit{
+	position: absolute;
+    left: 21%;
+    top: 28%;
+
+}
+.container{
+	box-shadow: 0 5px 5px 0 rgba(0, 0, 0,0.3);
+	background-color: rgb(243, 243, 243);
+}

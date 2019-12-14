@@ -21,7 +21,7 @@ class Shop extends CI_Controller {
 	public function __constract()
 	{
 		parent::__construct();
-		
+	
 		
 	}
 	
@@ -33,5 +33,15 @@ class Shop extends CI_Controller {
 	public function info()
 	{
 		$this->load->view('info');
+	}
+
+	public function cart()
+	{
+		$this->load->view('cart');
+	}
+
+	public function checkout()
+	{
+		$this->load->view('checkout');
 	}
 }

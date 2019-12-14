@@ -42,19 +42,21 @@
             <div class="col-md-12">
                 <div class="row ">
                     <div class="col-md-3 box">
-                        <form class="form"  action="">
+                        <form class="form" method="post"  action="<?= base_url('login')?>">
                             <h1 class="text-center">LOGIN</h1>
                     
                             <div class="form-group">
-                                <input type="text" name="email" id="email" required>
-                                <label for="email" class="label-email"><span class="content-email">Email</span></label>
-                            </div>
+                                <input type="email" name="email" id="email" required>
+                                <label for="email"  class="label-email"><span class="content-email">Email</span></label>
+																<?= form_error('email', '<small class="red-text">','</small>'); ?>
+														</div>
                             
                             <div class="form-group">
-                                    <input type="password" name="password" id="password" required>
-                                    <label for="password" class="label-password"><span class="content-password">Password</span></label>
-                            </div>
-                            <input class="btn btn-secondary mx-auto d-block" type="button" value="LOGIN">
+                                  <input type="password" name="password" id="password" required>
+                                 	<label for="password" class="label-password"><span class="content-password">Password</span></label>
+																	 <?= form_error('password', '<small class="red-text">','</small>'); ?>
+														</div>
+                            <button type="submit" class="btn btn-secondary mx-auto d-block"  >LOGIN</button>
                             <h5 class="text-center">OR</h5>
                             <hr>
                             <a href="http://"><img class="img-fluid  mx-auto d-block" src="<?= base_url('external/image/google-sign-in.png');?>" alt="login google"></a>

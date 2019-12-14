@@ -27,6 +27,50 @@ class Login extends CI_Controller {
 	
 	public function index()
 	{
-		$this->load->view('login');
+		$this->load->library('form_validation');
+		
+		$this->form_validation->set_rules('email', 'Email', 'trim|required');
+		$this->form_validation->set_rules('password', 'Password', 'trim|required');
+		if ($this->form_validation->run() == false) {
+			$this->load->view('login');
+		}else{
+				
+			$username = $this->input->post('email');
+			$password = $this->input->post('password');
+			
+			$user = $this->db->get_where('user', ['email' => $username])->row_array();
+
+			if ($user) {
+					//jika user ada
+				if ($password===$user['password']) {
+						$data = [
+							'id' => $user['id'],
+							'nama' => $user['name'],
+							'email' => $user['email'],
+							'role' => $user['rolle']
+						];
+							
+						$this->session->set_userdata( $data );
+	
+						redirect('user');
+						
+				} else {
+					$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">
+						Password salah/div>');
+			
+						//Loading View
+					redirect('login');
+				}
+					
+			} else {
+				$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">
+					User tidak ada, silahkan Registrasi terlebih dahulu</div>');
+			
+					//Loading View
+				redirect('login');
+			}
+				
+				
+		}
 	}
 }
